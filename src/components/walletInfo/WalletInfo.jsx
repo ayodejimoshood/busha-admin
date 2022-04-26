@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./walletInfo.css";
 // import { ArrowDownward, ArrowUpward } from "@material-ui/icons";
 import Naira from '../../assets/img/icon/Naira.svg';
@@ -6,23 +6,24 @@ import Bitcoin from '../../assets/img/icon/Bitcoin.svg';
 import Ethereum from '../../assets/img/icon/Ethereum.svg';
 import Litecoin from '../../assets/img/icon/Litecoin.svg';
 import RightArrow from '../../assets/img/icon/RightArrow.svg';
+import Loader from '../../assets/img/loader/rolling-1s-201px.gif';
 import AddNewWallet from '../WalletSidebar/AddNewWallet';
-// import RightArrow from '../../assets/img/icon/RightArrow.svg';
 
-export default function WalletInfo() {
-  // function changeBackground(e) {
-  //   e.target.style.background = 'red';
-  // }
+// export default function WalletInfo() {
+const WalletInfo = () => {
+  const [isLoading, setIsLoading] = React.useState(false);
 
-  // const WalletSidebar = ({ toggle }) => {
+  const handleLoading = () => {
+    setIsLoading(false);
+  }
 
-  // }
-  // const [isOpen, setIsOpen] = useState(false);
-  // const toggle = () => {
-  //   console.log("toggle", toggle);
-  //   setIsOpen(!isOpen);
-  // };
-  return (
+  useEffect(() => {
+    window.addEventListener("load",handleLoading);
+    return () => window.removeEventListener("load", handleLoading);
+  }, []);
+
+  return !isLoading ? (
+    
     <div>
       {/* start header title */}
       <div style={{paddingLeft: 20, paddingTop: 50, marginBottom: 5, display: "flex", flexDirection: 'row', alignItems: 'center' }}>
@@ -86,5 +87,14 @@ export default function WalletInfo() {
         </div>
       </div>
     </div>
-  );
+    // <div style={{display: 'flex', justifyContent: 'center', padding: 150}}>
+    //   <img src={Loader} width="60px" height="60px" alt="" />
+    // </div>
+  ):(
+    <div style={{display: 'flex', justifyContent: 'center', padding: 150}}>
+      <img src={Loader} width="60px" height="60px" alt="" />
+    </div>
+  )
 }
+
+export default WalletInfo;
