@@ -3,12 +3,12 @@ A Busha React Admin App written in ReactJS using Javascript
 ## Screenshots
 
 Dashboard Page               |  Loading Page               
-:-------------------------:|:-------------------------:|:-------------------------:
-![](https://raw.githubusercontent.com/fissy/busha-admin/master/screenshot/dashboard.png)|![](https://raw.githubusercontent.com/fissy/busha-admin/master/screenshot/dashboard.png)|
+:-------------------------:|:-------------------------:
+![](https://raw.githubusercontent.com/fissy/busha-admin/master/screenshot/dashboard.png)|![](https://raw.githubusercontent.com/fissy/moniee-mobile/master/screenshot/onboarding_screen.png)|
 
 Add New Wallet SideNavbar                |  Add New Wallet SideNavbar Loading              
-:-------------------------:|:-------------------------:|:-------------------------:
-![](https://raw.githubusercontent.com/fissy/busha-admin/master/screenshot/dashboard.png)|![](https://raw.githubusercontent.com/fissy/busha-admin/master/screenshot/dashboard.png)|
+:-------------------------:|:-------------------------:
+![](https://raw.githubusercontent.com/fissy/busha-admin/master/screenshot/dashboard.png)|![](https://raw.githubusercontent.com/fissy/busha-admin/master/screenshot/dashboard.png)|![](https://raw.githubusercontent.com/fissy/busha-admin/master/screenshot/dashboard.png)|
          
 
 ## Installation
