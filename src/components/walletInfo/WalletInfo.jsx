@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./walletInfo.css";
 // import { ArrowDownward, ArrowUpward } from "@material-ui/icons";
 import Naira from '../../assets/img/icon/Naira.svg';
