@@ -1,21 +1,21 @@
 import React from "react";
-import styles from "./AddNewWalletSidebar.css";
+import "./AddNewWalletSidebar.css";
 import { RiCloseLine } from "react-icons/ri";
 
 const AddNewWalletSidebar = ({ setIsOpen }) => {
   return (
     <>
-      <div className={styles.darkBG} onClick={() => setIsOpen(false)} />
-      <div className={styles.centered}>
-        <div className={styles.modal}>
-          <div className={styles.modalHeader}>
-            <h5 className={styles.heading}>Dialog</h5>
+      <div className="darkBG" onClick={() => setIsOpen(false)} />
+      <div className="centered">
+        <div className="modal">
+          <div className="modalHeader">
+            <h5 className="heading">Add New Wallet</h5>
           </div>
-          <button className={styles.closeBtn} onClick={() => setIsOpen(false)}>
+          <button className="closeBtn" onClick={() => setIsOpen(false)}>
             <RiCloseLine style={{ marginBottom: "-3px" }} />
           </button>
-          <div className={styles.modalContent}>
-            Are you sure you want to delete the item?
+          <div className="modalContent">
+            The crypto will be created instantly and be available in your list of wallets.
           </div>
           {/* <div className={styles.modalActions}>
             <div className={styles.actionsContainer}>

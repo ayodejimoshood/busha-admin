@@ -1,93 +1,98 @@
 .darkBG {
       background-color: rgba(0, 0, 0, 0.2);
-      width: 100vw;
-      height: 100vh;
+      width: 200vw;
+      height: 200vh;
       z-index: 0;
-      top: 50%;
-      left: 50%;
+      /* overflow: auto; */
+      /* top: 50%; */
+      /* left: 50%; */
       transform: translate(-50%, -50%);
       position: absolute;
-    }
-    
-    .centered {
+}
+
+.centered {
       position: fixed;
       top: 50%;
-      left: 50%;
+      left: 85%;
       transform: translate(-50%, -50%);
-    }
-    
-    .modal {
-      width: 250px;
-      height: 170px;
-      background: white;
+}
+
+.modal {
+      width: 30vw;
+      height: 62vw;
+      margin-top: 60px;
+      background-color: white;
       color: white;
-      z-index: 10;
-      border-radius: 16px;
+      /* z-index: 10; */
+      /* border-radius: 16px; */
       box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
-    }
-    
-    .modalHeader {
-      height: 50px;
+}
+
+.modalHeader {
+      height: 100px;
       background: white;
       overflow: hidden;
+      /* margin-bottom: -50px; */
       border-top-left-radius: 16px;
       border-top-right-radius: 16px;
-    }
-    
-    .heading {
-      margin: 0;
-      padding: 10px;
+}
+
+.heading {
+      /* margin: 0; */
+      /* margin-top: 30px; */
+      padding-left: 30px;
+      padding-top: 80px;
       color: #2c3e50;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 18px;
-      text-align: center;
-    }
-    
-    .modalContent {
-      padding: 10px;
+      text-align:left;
+      }
+
+.modalContent {
+      padding: 30px 30px;
       font-size: 14px;
       color: #2c3e50;
-      text-align: center;
-    }
-    
-    .modalActions {
+      text-align: left;
+}
+
+.modalActions {
       position: absolute;
       bottom: 2px;
       margin-bottom: 10px;
       width: 100%;
-    }
-    
-    .actionsContainer {
+}
+
+.actionsContainer {
       display: flex;
       justify-content: space-around;
       align-items: center;
-    }
-    
-    .closeBtn {
+}
+
+.closeBtn {
       cursor: pointer;
       font-weight: 500;
       padding: 4px 8px;
-      border-radius: 8px;
+      /* border-radius: 8px; */
       border: none;
-      font-size: 18px;
+      font-size: 25px;
       color: #2c3e50;
       background: white;
       transition: all 0.25s ease;
-      box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.06);
+      /* box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.06); */
       position: absolute;
       right: 0;
-      top: 0;
+      /* bottom: 120px; */
       align-self: flex-end;
-      margin-top: -7px;
-      margin-right: -7px;
-    }
-    
-    .closeBtn:hover {
-      box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+      margin-top: -30px;
+      margin-right: 7px;
+}
+
+.closeBtn:hover {
+      /* box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04); */
       transform: translate(-4px, 4px);
-    }
-    
-    .deleteBtn {
+}
+
+.deleteBtn {
       margin-top: 10px;
       cursor: pointer;
       font-weight: 500;
@@ -98,15 +103,15 @@
       color: #fff;
       background: #ff3e4e;
       transition: all 0.25s ease;
-    }
-    
-    .deleteBtn:hover {
+}
+
+.deleteBtn:hover {
       box-shadow: 0 10px 20px -10px rgba(255, 62, 78, 0.6);
       transform: translateY(-5px);
       background: #ff3e4e;
-    }
-    
-    .cancelBtn {
+}
+
+.cancelBtn {
       margin-top: 10px;
       cursor: pointer;
       font-weight: 500;
@@ -117,10 +122,10 @@
       color: #2c3e50;
       background: #fcfcfc;
       transition: all 0.25s ease;
-    }
-    
-    .cancelBtn:hover {
+}
+
+.cancelBtn:hover {
       box-shadow: none;
       transform: none;
       background: whitesmoke;
-    }
+}
