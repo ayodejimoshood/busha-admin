@@ -1,0 +1,16 @@
+.AddNewWalletButton {
+  right: 0 ;
+  /* float: right; */
+  position: 'absolute';
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
+
+.AddNewWalletButton:hover {
+  background-color: #F5F7FA;
+  cursor: pointer;
+}

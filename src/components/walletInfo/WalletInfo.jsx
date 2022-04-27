@@ -7,7 +7,7 @@ import Ethereum from '../../assets/img/icon/Ethereum.svg';
 import Litecoin from '../../assets/img/icon/Litecoin.svg';
 import RightArrow from '../../assets/img/icon/RightArrow.svg';
 import Loader from '../../assets/img/loader/rolling-1s-201px.gif';
-import AddNewWallet from '../WalletSidebar/AddNewWallet';
+import AddNewWalletButton from '../WalletSidebar/AddNewWalletButton';
 
 // export default function WalletInfo() {
 const WalletInfo = () => {
@@ -32,7 +32,7 @@ const WalletInfo = () => {
         </div>
         <div style={{right: 250, position: 'absolute'}}>
           {/* <span onMouseOver={changeBackground} toggle={toggle} isOpen={isOpen}>+ Add new wallet</span> */}
-          <AddNewWallet/>
+          <AddNewWalletButton/>
         </div>
         
 
@@ -67,7 +67,7 @@ const WalletInfo = () => {
         {/* Ethereum */}
         <div className="walletItem">
           <span className="walletTitle">
-            <img src={Ethereum} style={{backgroundColor: '#627EEA', padding: 15, borderRadius: 50, verticalAlign: 'middle', width: 15, height: 15}} alt='' /> <span style={{color: '#ffffff', opacity: 0.72, marginRight: '50px'}}> &nbsp; Bitcoin</span>
+            <img src={Ethereum} style={{backgroundColor: '#627EEA', padding: 15, borderRadius: 50, verticalAlign: 'middle', width: 15, height: 15}} alt='' /> <span style={{color: '#ffffff', opacity: 0.72, marginRight: '50px'}}> &nbsp; Ethereum</span>
           </span>
           <div className="walletMoneyContainer">
             <span className="walletMoney">10.36490987 ETH</span>          
